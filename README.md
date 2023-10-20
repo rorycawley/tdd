@@ -1,7 +1,37 @@
+# Why
+
+Decide that will provide the most value or that we can tackle as a risky area to explore.
+
+Break work into small chunks that are easier to solve.
+
+Start with the end in mind, if you stop in order to articulate what it is you're trying to achieve before trying to achieve it then you can be focused in your work.
+
+Fast feedback, at every stage in your work to achieve your goal, you are able to see if you are there yet.
+
+We get into a focused flow on delivering valuable work, continuously able to check whether we've gotten there yet.
+
+Design software that is easy to understand by presenting a clear abstraction.
+
+Design software that is testable.
+
+Create tests that run quickly.
+
+Design software with a stable contract and an implementation that can be refactored.
+
+Design software that is isolated, hightly cohesive, low coupled.
+
+We're always able to show progress, when we check and we've achieved our goal then that is progress. We can forget about 2 week sprints and instead continuously deliver production code, i.e. we know that everything works proof from your TDD test suite.
+
+# Mindset promoted
+
+Confidence rather than fear.
+Patience to focus on doing the right work correctly.
+Focus, on one thing at a time and ensure it's done correctly and isolated.
+Control, always know the state of the software.
+
 # Actions
 
 Create a test
-
 
 # To Watch
 
@@ -52,13 +82,6 @@ No-one knows what % of application will be tested.
 
 https://www.youtube.com/watch?v=prLRI3VEVq4
 
-
-
-
-
-
-
-
 # tdd
 
 A developer can make progress when they have functionality to deliver with an articulated acceptance criteria. Their sole job is to work on delivering that functionality and check that it delivers on all the acceptance criteria.
@@ -79,7 +102,7 @@ Doesn't check an implementation
 
 Checking is something that we do with the motivation of confirming existing beliefs. Checking is a process of confirmation, verification, and validation. When we already believe something to be true, we verify our belief by checking. We check when we've made a change to the code and we want to make sure that everything that worked before still works.
 
-Checks are machine dependent because they give a binary response of pass or fail. 
+Checks are machine dependent because they give a binary response of pass or fail.
 
 A person who needs a clear, complete, up-to-date, unambiguous specification to proceed is a checker, not a tester. A person who needs a test script to proceed is a checker, not a tester. A person who does nothing but to compare a program against some reference is a checker, not a tester.
 
@@ -87,7 +110,7 @@ Mere checks aren't important; but checking—the activity required to build, mai
 
 Integrated tests (aka e2e, integration tests, ui tests i.e. anything that isn't a Developer tests) - this is not the developers job, this is the testers job, this is testing.
 Testing is something that we do with the motivation of finding new information. Testing is a process of exploration, discovery, investigation, and learning. When we configure, operate, and observe a product with the intention of evaluating it, or with the intention of recognizing a problem that we hadn't anticipated, we're testing.
-Test on the other hand requires sapience. They are an exploratory way of learning the system and answering the question, 'Is there a problem here?'. 
+Test on the other hand requires sapience. They are an exploratory way of learning the system and answering the question, 'Is there a problem here?'.
 
 Agile projects require true generalists as testers: people who have requirements-, design-, and code-understanding skills. Without those skills, they can't think critically enough about the product under development, and they might not be able to create enough variety of tests. If they understand the requirements, design, and code, they can turn that understanding into crafty tests. Some of those tests will be exploratory. Even some of the exploratory tests will need to be automated in order to repeat them. And, I've seen great testers on agile projects who can quickly create automated tests to do some of their exploration.
 
@@ -95,4 +118,3 @@ Testers can automate tests and they have an amazing mindset to try to find bugs 
 
 Integration Tests are a scam
 https://www.youtube.com/watch?v=VDfX44fZoMc
-
