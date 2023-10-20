@@ -41,15 +41,14 @@ class Dollar
 {
     internal int amount;
 
-    private int v;
 
     public Dollar(int v)
     {
-        this.v = v;
+        this.amount = v;
     }
 
     public void times(int multiplier)
     {
-        amount = 5 * 2;
+        amount = amount * 2;
     }
 }
