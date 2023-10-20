@@ -39,7 +39,7 @@ public class MulticurrencyReportTest
 
 class Dollar
 {
-    internal int amount = 10;
+    internal int amount;
 
     private int v;
 
@@ -48,8 +48,8 @@ class Dollar
         this.v = v;
     }
 
-    public int times(int multiplier)
+    public void times(int multiplier)
     {
-        return 0;
+        amount = 5 * 2;
     }
 }

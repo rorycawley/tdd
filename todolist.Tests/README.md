@@ -6,6 +6,12 @@ Imagine the perfect interface (API) to test against and write the test against t
 
 # TDD Steps
 
+Add a little test
+Run all tests and fail
+Make a little change
+Run the test and pass
+Refactor and remove duplication
+
 Write a failing test.
 Run the test: "dotnet test".
 Develop code until the test passes.
