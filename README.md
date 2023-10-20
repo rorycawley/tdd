@@ -1,5 +1,36 @@
+# Actions
+
+Create a test
+
+
+# To Watch
+
+.NET clean arch with functional core:
+https://www.youtube.com/watch?v=S100FP9piGs&t=12s
+https://news.ycombinator.com/item?id=18043058
+https://www.youtube.com/watch?v=SAjsP2igBNk
+https://www.youtube.com/watch?v=qtX7-OFh7-A
+https://www.youtube.com/watch?v=bDWApqAUjEI
+
+https://www.destroyallsoftware.com/screencasts/catalog/functional-core-imperative-shell
+https://www.destroyallsoftware.com/talks/boundaries
+https://www.youtube.com/watch?v=CeoZX7Sltk0&list=PLnJ-s3o7NWtSIoHFTNrDHfN_HiHicflVn&index=7
+
+https://www.youtube.com/watch?v=lv7AFBst_70&list=PLnJ-s3o7NWtSIoHFTNrDHfN_HiHicflVn&index=3
+
+https://www.youtube.com/watch?v=SxJPQ5qXisw&t=1908s
+
 # Developing
 
+Checks the functional core, the business rules. The functionality controlled by the domain.
+Requires embracing evolutionary design, the design is evolving, it allows us to delivery sooner.
+Use trial and error, have a go, see how it goes, get feedback and then improve.
+Objects are collections are partially applied functions.
+Use DDD to improve naming.
+Attempt to remove duplication.
+Names that are similar should be close together, and vice versa - for cohesion.
+Add abstractions to be able to ignore most of the code.
+Focus on one small improvement at a time.
 We develop towards an abstraction, a protocol. A collection of functions but not their implementations. It describes 'what can I do' without describing 'how I do it'.
 The contract is the set of behaviours of those functions.
 TDD approach involves keeping a focus on one thing at a time, one behaviour that you want to implement, then to write code to check that behaviour before writing code that implements that behaviour.
@@ -10,11 +41,16 @@ TDD checks are not brittle since they only check for the desired behaviour.
 TDD is a positive feedback loop.
 Code is stateless
 Code uses immutable data structures.
+DDD domain model.
 
 # Testing
 
 Developers don't write tests, the testers write the tests.
 No-one knows what % of application will be tested.
+
+# Observability
+
+https://www.youtube.com/watch?v=prLRI3VEVq4
 
 
 
