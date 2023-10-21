@@ -29,6 +29,12 @@ Patience to focus on doing the right work correctly.
 Focus, on one thing at a time and ensure it's done correctly and isolated.
 Control, always know the state of the software.
 
+# Notes
+
+Don't create tests that are coupled to implementation details, only test the contract (no mocks)
+We should be able to change the implementation details without any tests being broken.
+We don't want tests that are hard to understand when we read them later.
+
 # Actions
 
 Create a test
@@ -47,7 +53,7 @@ https://www.destroyallsoftware.com/talks/boundaries
 https://www.youtube.com/watch?v=CeoZX7Sltk0&list=PLnJ-s3o7NWtSIoHFTNrDHfN_HiHicflVn&index=7
 
 https://www.youtube.com/watch?v=lv7AFBst_70&list=PLnJ-s3o7NWtSIoHFTNrDHfN_HiHicflVn&index=3
-
+https://www.youtube.com/watch?v=EZ05e7EMOLM
 https://www.youtube.com/watch?v=SxJPQ5qXisw&t=1908s
 
 # Developing

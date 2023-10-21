@@ -1,3 +1,8 @@
+# Overall
+
+Make it work but don't make it pretty
+Make it pretty after it works
+
 # Advice
 
 Start small or not at all
@@ -17,3 +22,9 @@ Run the test: "dotnet test".
 Develop code until the test passes.
 Commit the code.
 Refactor the code and run the tests.
+
+# Todolist
+
+Create a new todo item
+Add the todo item to my list of todo items
+Print out the todo items showing the last added todo item last on the list printed

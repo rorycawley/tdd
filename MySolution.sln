@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "todolist", "todolist\todoli
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "todolist.Tests", "todolist.Tests\todolist.Tests.csproj", "{2F9ACA77-7BFA-48A3-9345-50059FA78014}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoomBookingApp.Tests", "RoomBookingApp.Tests\RoomBookingApp.Tests.csproj", "{BBACF9A0-6127-4983-B4C7-EEE58C67B92D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoomBookingApp", "RoomBookingApp\RoomBookingApp.csproj", "{5B780206-B422-4D8B-A406-04CF4D42BD7E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +28,13 @@ Global
 		{2F9ACA77-7BFA-48A3-9345-50059FA78014}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F9ACA77-7BFA-48A3-9345-50059FA78014}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F9ACA77-7BFA-48A3-9345-50059FA78014}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBACF9A0-6127-4983-B4C7-EEE58C67B92D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBACF9A0-6127-4983-B4C7-EEE58C67B92D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBACF9A0-6127-4983-B4C7-EEE58C67B92D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBACF9A0-6127-4983-B4C7-EEE58C67B92D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B780206-B422-4D8B-A406-04CF4D42BD7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B780206-B422-4D8B-A406-04CF4D42BD7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B780206-B422-4D8B-A406-04CF4D42BD7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B780206-B422-4D8B-A406-04CF4D42BD7E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
