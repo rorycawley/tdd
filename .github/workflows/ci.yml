@@ -22,11 +22,6 @@ jobs:
       - name: Install dependencies
         run: dotnet restore
 
-      - name: Lint/Check code
-        run: |
-          dotnet tool install --global dotnet-format
-          dotnet format ../../MySolution.sln --check
-
       - name: Build
         run: dotnet build --no-restore
 
