@@ -31,10 +31,19 @@ git commit -m "Fixed the issue causing ..."
 git push origin task/my-new-update
 ```
 
-# Create a Pull Request
+# Create a Pull Request and check all passed
 
 ```sh
 gh pr create --title "Descriptive PR title" --body "Detailed PR description."
+gh pr view task/my-new-update --comments
+gh pr checks bugfix/my-new-fix
+```
+
+# Rebase and Merge:
+
+```sh
+git switch main
+
 ```
 
 In github create the PR and manage it.
