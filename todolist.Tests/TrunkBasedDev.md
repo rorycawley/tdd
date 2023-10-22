@@ -43,7 +43,11 @@ gh pr checks bugfix/my-new-fix
 
 ```sh
 git switch main
-
+git pull origin main
+git switch task/descriptive-name
+git rebase main
+git push origin task/descriptive-name --force-with-lease
+gh pr merge task/descriptive-name --squash --delete-branch
 ```
 
 In github create the PR and manage it.
