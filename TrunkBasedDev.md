@@ -36,7 +36,7 @@ git push origin task/my-new-update
 ```sh
 gh pr create --title "Descriptive PR title" --body "Detailed PR description."
 gh pr view task/my-new-update --comments
-gh pr checks bugfix/my-new-fix
+gh pr checks task/my-new-update
 ```
 
 # Rebase and Merge:
@@ -44,29 +44,14 @@ gh pr checks bugfix/my-new-fix
 ```sh
 git switch main
 git pull origin main
-git switch task/descriptive-name
+git switch task/my-new-update
 git rebase main
-git push origin task/descriptive-name --force-with-lease
-gh pr merge task/descriptive-name --squash --delete-branch
+git push origin task/my-new-update --force-with-lease
+gh pr merge task/my-new-update --squash --delete-branch
 ```
 
-In github create the PR and manage it.
+# Release to production
 
-git switch main
-git pull origin main
-
-git switch bugfix/descriptive-issue-name
-git rebase main
-git rebase --continue
-
-git switch main
-git merge bugfix/descriptive-issue-name
-
-git push origin main
-
-git branch -d bugfix/descriptive-issue-name
-git push origin --delete bugfix/descriptive-issue-name
-
-```
-
+```sh
+gh release create
 ```
