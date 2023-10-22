@@ -1,12 +1,16 @@
-name: C# CI
+name: C# CI/CD
 
 on:
   push:
     branches: [main]
   pull_request:
     branches: [main]
+  release:
+    types: [published]
 
 jobs:
+  # It triggers on pushes and PRs to the main branch.
+  # After building and testing, it publishes the application and uploads the build artifacts.
   build:
     runs-on: ubuntu-latest
 
@@ -27,3 +31,60 @@ jobs:
 
       - name: Run tests
         run: dotnet test --no-build
+
+      - name: Publish
+        run: dotnet publish --configuration Release --output ./publish
+
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: myapp
+          path: ./publish/
+
+  #   CD - DEV Deployment: This job is automatically triggered on every push to the main branch,
+  #   deploying the latest changes to the DEV environment.
+  deploy-dev:
+    needs: build
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download build artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: myapp
+
+      - name: Deploy to DEV
+        run: |
+          ls ${{ github.workspace }}
+
+  #   CD - QA Deployment: This job is triggered on every pull request to the main branch,
+  #   deploying the changes to the QA environment for validation.
+  deploy-qa:
+    needs: deploy-dev
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download build artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: myapp
+
+      - name: Deploy to QA
+        run: |
+          ls ${{ github.workspace }}
+
+  # CD - PROD Deployment: This job is triggered when a new release is published on GitHub.
+  # It deploys the version associated with the release to the PROD environment.
+  deploy-prod:
+    needs: deploy-qa
+    if: github.event_name == 'release'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download build artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: myapp
+
+      - name: Deploy to PROD
+        run: |
+          ls ${{ github.workspace }}
