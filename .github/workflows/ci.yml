@@ -23,11 +23,9 @@ jobs:
         run: dotnet restore
 
       - name: Lint/Check code
-        # You can use third-party actions/tools for linting or static code analysis here.
-        # Example using dotnet-format (adjust this to your linting tool of choice):
         run: |
           dotnet tool install --global dotnet-format
-          dotnet format --check
+          dotnet format ../../MySolution.sln --check
 
       - name: Build
         run: dotnet build --no-restore
