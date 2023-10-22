@@ -1,0 +1,36 @@
+name: C# CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup .NET Core
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '7.x' # Adjust this to your project's .NET version
+
+      - name: Install dependencies
+        run: dotnet restore
+
+      - name: Lint/Check code
+        # You can use third-party actions/tools for linting or static code analysis here.
+        # Example using dotnet-format (adjust this to your linting tool of choice):
+        run: |
+          dotnet tool install --global dotnet-format
+          dotnet format --check
+
+      - name: Build
+        run: dotnet build --no-restore
+
+      - name: Run tests
+        run: dotnet test --no-build
